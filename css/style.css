@@ -2249,4 +2249,23 @@ span.color7{
 	.soc_icons ul li a.icon5 {
 		background: #2e2e2e url('../images/icon5.png') no-repeat 8px 14px;
 	}
+
+}
+.dropdown-menu {
+	position: absolute; 
+	top:72px; 
+	z-index: 1; 
+	background-color: white; 
+	width: 300px; 
+	height: 300px; 
+	border: 1px solid #000; 
+	z-index: 100;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: visibility 0.1s linear,opacity 0.2s linear;
+	transition: visibility 0.1s linear,opacity 0.2s linear;
+}
+.dropdown-menu-container:hover .dropdown-menu {
+	visibility: visible;
+	opacity: 1;
 }
