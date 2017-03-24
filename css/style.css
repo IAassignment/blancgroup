@@ -2269,3 +2269,35 @@ span.color7{
 	visibility: visible;
 	opacity: 1;
 }
+.span1_of_1_des.desc1.quantity-container{
+	float:left;
+	margin:28px 0 0 8px;
+	
+}
+.quantity-container.quantity{
+	font-size:20px;
+	text-align:center;
+	width:40px;
+	height:40px;
+	display:inline-block;
+	border-top:0.5px solid #ffffff;
+	border-bottom:0.5px solid #ffffff;
+	background-color:#000000;
+	line-height:40px;
+	margin:0;
+	color:black;
+	float:left;
+	-webkit-transition:.5s;
+	transition:.5s;
+	cursor:pointer;
+}	
+.quantity-container.quantity:hover{
+	background-color:#ff9999;
+}
+.quantity-container.quantity.number{
+	color:#777;
+	background-color:transparent;
+	cursor:default
+}
+	
+	

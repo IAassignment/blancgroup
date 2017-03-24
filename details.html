@@ -197,17 +197,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 			<!-- end product_slider -->
 			</div>
+				<div class="quantity-container">
+							<div class="quantity" onclick="quantityCtrl(0)">-</div>
+							<div id="qty" class="quantity number">1</div>
+							<div class="quantity" onclick="quantityCtrl(1)">+</div>
+							
+					</div>
 			<!-- start span1_of_1 -->
 			<div class="span1_of_1_des">
 				  <div class="desc1">
 					<h3>HONG KONG</h3>
-					<h5>US 260 <span>299</span> <br> <a href="https://www.facebook.com/officialblancgroup/?ref=ts&fref=ts">click for offer likes facebook pages</a></h5>
+					<h5>US 260 <span id="displayPrice">299</span> <br> <a href="https://www.facebook.com/officialblancgroup/?ref=ts&fref=ts">click for offer likes facebook pages</a></h5>
 					<div class="available">
-						<div class="btn_form">
-							<form action="" method="GET">
-								<input type="submit" value="buy now" title="" />
-							</form>
-						</div>
+					<script>
+						var x=parseInt(document.getElementById("itemPrice").innerHTML);
+						document.getElementById("displayPrice").innerHTML=x.toLocaleString();
+					</script>
+				
 						<span><a href="register.html">login to save in wishlist </a></span>
 					
 					</div>
