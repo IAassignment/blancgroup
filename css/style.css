@@ -2299,5 +2299,48 @@ span.color7{
 	background-color:transparent;
 	cursor:default
 }
+thead{
+	text-transform:uppercase;
+	padding:10px 20px 10px;
+	font-weight:normal;
+	background-color:#000000;
+	color:#ffffff;
+}
+tfoot{
+	border-bottom:
+}
+table.thead.th,table.thead.td{
+	text-transform:uppercase;
+	padding:10px 20px 10px;
+	font-weight:normal;
+	background-color:#000000;
+	color:#ffffff;
+	
+	
+}
+table{
+	border-spacing:5px;
+	width:100%;
+	box-sizing:border box;
+	padding-top:2px;
+	margin:1
+}
+.table.row1{
+	background-color:#f1f1c1;
+}
+
+.table,th,td{
+	
+	border-collapse:collapse;
+	
+}
+th,td{
+	padding:15px;
+	position:float;
+
+}
+th{
+ text-align:center;
+}
 	
 	
