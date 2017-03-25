@@ -2269,19 +2269,19 @@ span.color7{
 	visibility: visible;
 	opacity: 1;
 }
-.span1_of_1_des.desc1.quantity-container{
+.span1_of_1_des.quantity-container{
 	float:left;
 	margin:28px 0 0 8px;
+	border:1 px solid black;
 	
 }
-.quantity-container.quantity{
+.span1_of_1_des.quantity-container.quantity{
 	font-size:20px;
 	text-align:center;
 	width:40px;
 	height:40px;
 	display:inline-block;
-	border-top:0.5px solid #ffffff;
-	border-bottom:0.5px solid #ffffff;
+	border:1px solid black;
 	background-color:#000000;
 	line-height:40px;
 	margin:0;
@@ -2291,10 +2291,10 @@ span.color7{
 	transition:.5s;
 	cursor:pointer;
 }	
-.quantity-container.quantity:hover{
+.span1_of_1_des.quantity-container.quantity:hover{
 	background-color:#ff9999;
 }
-.quantity-container.quantity.number{
+.span1_of_1_des.quantity-container.quantity.number{
 	color:#777;
 	background-color:transparent;
 	cursor:default
