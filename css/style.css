@@ -2269,13 +2269,13 @@ span.color7{
 	visibility: visible;
 	opacity: 1;
 }
-.span1_of_1_des.quantity-container{
+.span1_of_1_des .quantity-container{
 	float:left;
 	margin:28px 0 0 8px;
 	border:1 px solid black;
 	
 }
-.span1_of_1_des.quantity-container.quantity{
+.span1_of_1_des .quantity-container .quantity{
 	font-size:20px;
 	text-align:center;
 	width:40px;
@@ -2291,11 +2291,11 @@ span.color7{
 	transition:.5s;
 	cursor:pointer;
 }	
-.span1_of_1_des.quantity-container.quantity:hover{
+.span1_of_1_des .quantity-container .quantity:hover{
 	background-color:#ff9999;
 }
-.span1_of_1_des.quantity-container.quantity.number{
-	color:#777;
+.span1_of_1_des .quantity-container .quantity.number{
+	color:#777; 
 	background-color:transparent;
 	cursor:default
 }
