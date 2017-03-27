@@ -3,6 +3,7 @@ funtion quantityCtrl(x) {
 	if (x === 0) {
 		if (y <= 1) {
 			// do nothing
+	}
 		} else {
 			y--;
 			document.getElementById("qty").innerHTML = y;
@@ -16,6 +17,5 @@ funtion quantityCtrl(x) {
 			var x = parseInt(document.getElementById("itemPrice")).innerHTML;
 			document.getElementById("displayPrice").innerHTML = (x*y).toLocaleString();
 		}
-	}
 
 }
