@@ -200,37 +200,33 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				
 			<!-- start span1_of_1 -->
 			<div class="span1_of_1_des">
-			 <div class="quantity-container">
-							<div class="quantity" onclick="quantityCtrl(0)">-</div>
-							<div id="qty" class="quantity number">1</div>
-							<div class="quantity" onclick="quantityCtrl(1)">+</div>
-							
-					</div>
+			
 				  <div class="desc1">
 					<h3>HONG KONG</h3>
-					<h5>$ 260 <span id="displayPrice">299</span> <br> <a href="https://www.facebook.com/officialblancgroup/?ref=ts&fref=ts">click for offer likes facebook pages</a></h5>
+					<h5>$ 260 <span id="displayPrice">299</span> 
+			
+					<br> <a href="https://www.facebook.com/officialblancgroup/?ref=ts&fref=ts">click for offer likes facebook pages</a></h5>
+					<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fofficialblancgroup%2F&width=450&layout=standard&action=like&size=small&show_faces=true&share=true&height=80&appId" width="450" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 					
 					<div class="available">
-					<script>
-						var x=parseInt(document.getElementById("itemPrice").innerHTML);
-						document.getElementById("displayPrice").innerHTML=x.toLocaleString();
-					</script>
 				
 						<span><a href="register.html">login to save in wishlist </a></span>
 					
 					</div>
-					<div class="share-desc">
-						<div class="share">
-							<h4>Share Product :</h4>
-							<ul class="share_nav">
-								<li><a href="https://www.facebook.com/"><img src="images/facebook.png" title="facebook"></a></li>
-								<li><a href="https://twitter.com/"><img src="images/twitter.png" title="Twiiter"></a></li>
-								<li><a href="https://myaccount.nytimes.com/auth/login?URI=http://www.nytimes.com/services/xml/rss/index.html"><img src="images/rss.png" title="Rss"></a></li>
-								<li><a href="https://accounts.google.com/Loginhttps://accounts.google.com/Login"><img src="images/gpluse.png" title="Google+"></a></li>
-				    		</ul>
-						</div>
-						<div class="clear"></div>
+					<script src="js/quantity.js" type="text/javascript"></script>
+					<script>
+					var x = parseInt(document.getElementById("itemPrice").innerHTML);
+					document.getElementById("displayPrice").innerHTML = x.toLocaleString();
+					
+					</script>
+					
+					<div class="quantity-container">
+							<div class="quantity" onclick="quantityCtrl(0)">-</div>
+							<div id="qty" class="quantity number">1</div>
+							<div class="quantity" onclick="quantityCtrl(1)">+</div>
+									
 					</div>
+						
 			   	 </div>
 			   	</div>
 			   	<div class="clear"></div>
