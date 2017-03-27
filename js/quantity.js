@@ -1,21 +1,20 @@
-funtion quantityCtrl(x) {
+function quantityCtrl(x) {
 	var y = document.getElementById("qty").innerHTML;
 	if (x === 0) {
 		if (y <= 1) {
 			// do nothing
-	}
 		} else {
 			y--;
 			document.getElementById("qty").innerHTML = y;
-			var x = parseInt(document.getElementById("itemPrice")).innerHTML;
+			var x = parseInt(document.getElementById("itemPrice").innerHTML);
 			document.getElementById("displayPrice").innerHTML = (x * y).toLocaleString();
 		}
-	}else if (x === 1){
-		if (y < 20){
+	} else if (x === 1) {
+		if (y < 15) {
 			y++;
 			document.getElementById("qty").innerHTML = y;
-			var x = parseInt(document.getElementById("itemPrice")).innerHTML;
-			document.getElementById("displayPrice").innerHTML = (x*y).toLocaleString();
+			var x = parseInt(document.getElementById("itemPrice").innerHTML);
+			document.getElementById("displayPrice").innerHTML = (x * y).toLocaleString();
 		}
-
+	}
 }
