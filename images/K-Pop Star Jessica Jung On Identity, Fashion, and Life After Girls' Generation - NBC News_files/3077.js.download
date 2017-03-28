@@ -1,0 +1,1 @@
+(function(){var PID=3077;var RATE=10;function writeTag(p){if((Math.random()*100.0)<RATE){p=typeof(p)=='string'&&p.length?('&'+p):'';scriptTag=document.createElement('SCRIPT');scriptTag.src = 'http://ad.insightexpressai.com/adserver/adServer.aspx?publisherID=' + PID;document.body.appendChild(scriptTag);}};writeTag('');}())
