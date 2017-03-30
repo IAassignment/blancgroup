@@ -2299,6 +2299,13 @@ span.color7{
 	background-color:transparent;
 	cursor:default
 }
+.big-table{
+	padding-bottom:50px;
+	
+	
+	
+	
+}
 thead{
 	text-transform:uppercase;
 	padding:10px 20px 10px;
@@ -2321,7 +2328,7 @@ table.thead.th,table.thead.td{
 table{
 	border-spacing:5px;
 	width:100%;
-	box-sizing:border box;
+	
 	padding-top:2px;
 	margin:1;
 	position:relative;
@@ -2339,7 +2346,7 @@ table{
 	
 }
 
-.table,th,td{
+table,th,td{
 	border:1px solid black;
 	border-collapse:collapse;
 	
