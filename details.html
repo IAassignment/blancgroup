@@ -271,14 +271,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</div>
 				        <div class="content-3">
 				        	<p>Write your comments here...</p>
-							<form action="/action_page.php" id="usrform">
-							Name: <input type="text" name="usrname" style="opacity: 1; position: static; display: block;"/> 
+							<form action="https://script.google.com/macros/s/AKfycbwFpboBuhCQGxTsed40FI44k_LYTsFo0nK4BzKJ7hkuIabIFAg/exec" name="gform" id="gform" method="post">
+							Name: <input type="text" name="usrname" id="usrname" style="opacity: 1; position: static; display: block;"/> 
 							
 							
 							
 						<br>
-						<textarea rows="10" cols="50" name="comment" form="usrform">
-						Enter text here...</textarea>
+						<textarea rows="10" cols="50" name="comment" id="comment" form="gform" placeholder="Enter you text here..." required/></textarea>
 						<input type="submit" value="Submit" style="opacity: 1; position: static; display: block;" />
 </form>
 							<div class="clear"></div>
