@@ -51,7 +51,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</ul>
 		</div>	
 		<div class="web_search">
-		 	<form action="http://www.google.co.uk/search?hl=en-GB&source=hp&q=" method="GET">
+		 	<form action="https://www.google.com/search" method="GET" onsubmit="document.getElementById('searchbox').value = 'site:blancgroup.com ' + document.getElementById('searchbox').value;">
 				<input type="text" name="q" placeholder="Search"/>
 				<input type="submit" value=" " />
 			</form>
@@ -147,12 +147,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<tr>
 			<th></th>
 			  <td class="update-quantities" align="right">
-                  <span class="update_btn">
-                    <a href="products.html">Update Quantity</a>
+                  <span class="group_btn group1">
+                    <button type="submit" id="update-cart" class="btn btn-1" style="padding: 8px!important" name="update"><a href="products.html">Update Quantity</a></button>
                   </span><br/><br/>
                 </td>  
 			<th>Total</th>
-			<th>US$620.00</th>
+			<th>US$980.00</th>
 			</tr>
 		</tfoot>
 
@@ -236,7 +236,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="wrap">
 <div class="footer">
 	<div class="f_search">
-		<form action="http://www.google.co.uk/search?hl=en-GB&source=hp&q=" method="GET">
+		<form action="https://www.google.com/search" method="GET" onsubmit="document.getElementById('searchbox').value = 'site:blancgroup.com ' + document.getElementById('searchbox').value;">
 			<input type="text" value="" placeholder="Enter email for newsletter" />
 			<input type="submit" value=""/>
 		</form>
