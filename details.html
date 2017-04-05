@@ -42,6 +42,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</script>
 </head>
 <body>
+<iframe id="window" name="window" style="display: none; height: 0; width: 0;"></iframe>
 <!-- start header -->
 <div class="top_bg">
 <div class="wrap">
@@ -271,14 +272,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</div>
 				        <div class="content-3">
 				        	<p>Write your comments here...</p>
-							<form action="https://script.google.com/macros/s/AKfycbwFpboBuhCQGxTsed40FI44k_LYTsFo0nK4BzKJ7hkuIabIFAg/exec" name="gform" id="gform" method="post">
+							<form action="https://script.google.com/macros/s/AKfycbwFpboBuhCQGxTsed40FI44k_LYTsFo0nK4BzKJ7hkuIabIFAg/exec" name="gform" id="gform" target="window" method="post" onsubmit="document.getElementById('submitid').value = 'Submitted'; document.getElementById('submitid').disabled = true;">
 							Name: <input type="text" name="usrname" id="usrname" style="opacity: 1; position: static; display: block;"/> 
 							
 							
 							
 						<br>
 						<textarea rows="10" cols="50" name="comment" id="comment" form="gform" placeholder="Enter you text here..." required/></textarea>
-						<input type="submit" value="Submit" style="opacity: 1; position: static; display: block;" />
+						<input type="submit" value="Submit" id="submitid" style="opacity: 1; position: static; display: block;" />
 </form>
 							<div class="clear"></div>
 						</div>
