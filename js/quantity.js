@@ -17,3 +17,4 @@ function quantityCtrl(x) {
 			document.getElementById("displayPrice").innerHTML = (x * y).toLocaleString();
 		}
 	}
+}

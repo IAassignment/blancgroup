@@ -42,6 +42,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</script>
 </head>
 <body>
+<iframe id="window" name="window" style="display: none; height: 0; width: 0;"></iframe>
 <!-- start header -->
 <div class="top_bg">
 <div class="wrap">
@@ -204,7 +205,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			 
 				  <div class="desc1">
 					<h3>ESTELLA (Black)</h3>
-					<h5>$ 257 <span id="displayPrice">299</span> <br> <a href="https://www.facebook.com/officialblancgroup/?ref=ts&fref=ts">click for offer likes facebook pages</a></h5>
+					<h5>$ <span id="itemPrice">257</span> <br> <a href="https://www.facebook.com/officialblancgroup/?ref=ts&fref=ts">click for offer likes facebook pages</a></h5>
 					<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fofficialblancgroup%2F&width=450&layout=standard&action=like&size=small&show_faces=true&share=true&height=80&appId" width="450" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 
 					<div class="available">
@@ -217,6 +218,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						var x=parseInt(document.getElementById("itemPrice").innerHTML);
 						document.getElementById("displayPrice").innerHTML=x.toLocaleString();
 					</script>
+					<h4>$ <span id="displayPrice"></span> </h4>
+
 					<div class="quantity-container">
 							<div class="quantity" onclick="quantityCtrl(0)">-</div>
 							<div id="qty" class="quantity number">1</div>
@@ -264,15 +267,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</div>
 				        <div class="content-3">
 				        	<p>Write your comments here...</p>
-							<form action="/action_page.php" id="usrform">
+							<form action="https://script.google.com/macros/s/AKfycbwFpboBuhCQGxTsed40FI44k_LYTsFo0nK4BzKJ7hkuIabIFAg/exec" name="gform" id="gform" target="window" method="post" onsubmit="document.getElementById('submitid').value = 'Submitted'; document.getElementById('submitid').disabled = true;">
 							Name: <input type="text" name="usrname" style="opacity: 1; position: static; display: block;"/> 
 							
 							
 							
 						<br>
-						<textarea rows="10" cols="50" name="comment" form="usrform">
-						Enter text here...</textarea>
-						<input type="submit" value="Submit" style="opacity: 1; position: static; display: block;" />
+						<textarea rows="10" cols="50" name="comment" id="comment" form="gform" placeholder="Enter you text here..." required/></textarea>
+						<input type="submit" value="Submit" id="submitid" style="opacity: 1; position: static; display: block;" />
 </form>
 							<div class="clear"></div>
 						</div>
