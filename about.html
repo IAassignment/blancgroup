@@ -14,6 +14,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!--- start-mmmenu-script---->
 <script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/quantity.js" type="text/javascript"></script>
 <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" />
 <script type="text/javascript" src="js/jquery.mmenu.js"></script>
 		<script type="text/javascript">
@@ -35,6 +36,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</script>
 </head>
 <body>
+<iframe id="window" name="window" style="display: none; height: 0; width: 0;"></iframe>
+
 <!-- start header -->
 <div class="top_bg">
 <div class="wrap">
@@ -60,6 +63,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</div>	
 </div>
 </div>
+
 <!-- start header_btm -->
 <div class="wrap">
 <div class="header_btm">
@@ -182,15 +186,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="wrap">
 <div class="footer">
 	<div class="f_search">
-		<form action="https://www.google.com/search" method="GET" onsubmit="document.getElementById('searchbox').value = 'site:blancgroup.com ' + document.getElementById('searchbox').value;">
-			<input type="text" value="" placeholder="Enter email for newsletter" />
-			<input type="submit" value=""/>
+		<form action="https://script.google.com/macros/s/AKfycbwrvlySJNjprdmpzrApH5cxrth7FkfeaQLm59_6B_W8am9io5a0/exec" id="gform" target="window" method="post" onsubmit="document.getElementById.innerhtml('successful!')">
+			<input type="text" name="Email" placeholder="Enter email for newsletter" />
+			<input type="submit" value="" onclick="message(0)"/>
 		</form>
 	</div>
 	<div class="soc_icons">
 			<ul>
 				<li><a class="icon1" href="https://www.facebook.com/officialblancgroup/?fref=nf"></a></li>
 				<li><a class="icon2" href="https://twitter.com/BLANC_ECLARE"></a></li>
+				<li><a class="icon3" href="index.html"></a></li>
+				<li><a class="icon4" href="contact.html"></a></li>
+				<li><a class="icon5" href="faq.html"></a></li>
 				
 			</ul>	
 	</div>
@@ -222,11 +229,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!--end scroll_top_btn -->
 	<div class="f_nav1">
 		<ul>
-						<li><a href="index.html">home /</a></li>
-			<li><a href="#">support /</a></li>
-			<li><a href="#">Terms and conditions /</a></li>
-			<li><a href="#">Faqs /</a></li>
-			<li><a href="#">Contact us</a></li>
+			
 		</ul>
 		</div>
 	<div class="copy">
