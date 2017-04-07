@@ -21,7 +21,7 @@ function quantityCtrl(x) {
 function message(z){
 	if(z === 0){
 		
-		alert("You will Receive Newsletter by Email!");
+		alert("Thank You Enter Email For Newsletter!");
 	}
 	
 }
