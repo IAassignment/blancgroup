@@ -18,10 +18,20 @@ function quantityCtrl(x) {
 		}
 	}
 }
-function message(z){
-	if(z === 0){
-		
+
+function validateForm(){
+	var x = document.forms["gform"]["Email"].value;
+	if (x === ""){
+		alert("Please enter your email!")
+	}else{
 		alert("Thank You Enter Email For Newsletter!");
 	}
+	
+}
+
+function submittedForm(){
+	document.getElementById('submitid').value = 'Commented'; 
+	document.getElementById('submitid').disabled = true;
+	
 	
 }
