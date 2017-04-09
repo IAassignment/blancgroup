@@ -20,7 +20,7 @@ function quantityCtrl(x) {
 }
 
 function validateForm(){
-	var x = document.forms["gform"]["Email"].value;
+	var x = document.forms["newsletterform"]["Email"].value;
 	if (x === ""){
 		alert("Please enter your email!")
 	}else{
